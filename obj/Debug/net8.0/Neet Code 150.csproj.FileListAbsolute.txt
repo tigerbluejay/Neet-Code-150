@@ -12,3 +12,4 @@ C:\Users\josem\OneDrive\Escritorio\DS&A 23-24\Neet Code 150\obj\Debug\net8.0\ref
 C:\Users\josem\OneDrive\Escritorio\DS&A 23-24\Neet Code 150\obj\Debug\net8.0\Neet Code 150.pdb
 C:\Users\josem\OneDrive\Escritorio\DS&A 23-24\Neet Code 150\obj\Debug\net8.0\Neet Code 150.genruntimeconfig.cache
 C:\Users\josem\OneDrive\Escritorio\DS&A 23-24\Neet Code 150\obj\Debug\net8.0\ref\Neet Code 150.dll
+C:\Users\josem\OneDrive\Escritorio\DS&A 23-24\Neet Code 150\obj\Debug\net8.0\Neet Code 150.sourcelink.json
