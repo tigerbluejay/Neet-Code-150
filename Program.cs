@@ -113,3 +113,30 @@ foreach (var pair in threeSumPairs)
 {
     Console.WriteLine($"[{string.Join(", ", pair)}]");
 }
+
+int[] height = [1,7,2,5,4,7,3,6];
+int maxArea = solution.MaxArea(height);
+Console.WriteLine("The max area of the water container is: " + maxArea);
+
+int[] height2 = [0,2,0,3,1,0,1,3,2,1];
+int maxArea2 = solution.Trap(height2);
+Console.WriteLine("The max area of the water container is: " + maxArea2);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// 03-Sliding-Window ///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+int[] stockPrices = [10,1,5,6,7,1];
+int maxProfit = solution.MaxProfit(stockPrices);
+Console.WriteLine("The max profit that can be made is: " + maxProfit);
+
+string longestSubstring = "zxyzxyz";
+int lengthofSubstring = solution.LengthOfLongestSubstring(longestSubstring);
+Console.WriteLine("The longest substring is " + lengthofSubstring + " chars long");
+
+string longestRepCharSubstring = "AAABABB"; int replacements = 2;
+int maxLengthofRepCharSubstring = solution.CharacterReplacement(longestRepCharSubstring, replacements);
+Console.WriteLine("The length of the longest substring with " + replacements + " character replacements is " + maxLengthofRepCharSubstring);
+
+// PermutationinaString.cs implementation (and full review) pending.
