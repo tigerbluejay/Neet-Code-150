@@ -140,3 +140,29 @@ int maxLengthofRepCharSubstring = solution.CharacterReplacement(longestRepCharSu
 Console.WriteLine("The length of the longest substring with " + replacements + " character replacements is " + maxLengthofRepCharSubstring);
 
 // PermutationinaString.cs implementation (and full review) pending.
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// 04-Stack /////////// ////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+string parenthesesCombination = "{[()]}";
+bool isValidParenthesesCombination = solution.IsValid(parenthesesCombination);
+if (isValidParenthesesCombination) Console.WriteLine("String is a valid parentheses combination");
+else Console.WriteLine("String is not a valid parentheses combination");
+
+MinStack minStack = new MinStack();
+minStack.Push(1);
+minStack.Push(2);
+minStack.Push(0);
+int stackVal01 = minStack.GetMin(); // return 0
+minStack.Pop();
+int stackVal02 = minStack.Top();    // return 2
+int stackVal03 = minStack.GetMin(); // return 1
+
+string[] tokens = ["3", "2", "-", "5", "*", "1", "+"];
+int resultRPN = solution.EvalRPN(tokens);
+Console.Write("The result of the operation is " + resultRPN);
+
+// recursion problem - fairly involved - recommend debugging when i'm more comfortable with complex recursion
+int generateParenthesesInput = 3;
+IList<string> generateParenthesesSolution = solution.GenerateParenthesis(generateParenthesesInput);
