@@ -161,8 +161,20 @@ int stackVal03 = minStack.GetMin(); // return 1
 
 string[] tokens = ["3", "2", "-", "5", "*", "1", "+"];
 int resultRPN = solution.EvalRPN(tokens);
-Console.Write("The result of the operation is " + resultRPN);
+Console.WriteLine("The result of the operation is " + resultRPN);
 
 // recursion problem - fairly involved - recommend debugging when i'm more comfortable with complex recursion
 int generateParenthesesInput = 3;
 IList<string> generateParenthesesSolution = solution.GenerateParenthesis(generateParenthesesInput);
+
+int[] temperatures = [30,38,30,36,35,40,28];
+int[] results = solution.DailyTemperatures(temperatures);
+Console.Write("Daily Tempareatures");
+for (int i = 0; i < results.Length; i++){
+    Console.Write(" " + results[i]);
+}
+Console.Write(Environment.NewLine);
+
+int targetPos = 10; int[] position = [4,1,0,7];  int[] speed = [2,2,1,1];
+int CarFleetCount = solution.CarFleet(targetPos, position, speed);
+Console.WriteLine("This many car Fleets exist at "+ targetPos + ": " + CarFleetCount);
