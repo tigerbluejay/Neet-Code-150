@@ -178,3 +178,15 @@ Console.Write(Environment.NewLine);
 int targetPos = 10; int[] position = [4,1,0,7];  int[] speed = [2,2,1,1];
 int CarFleetCount = solution.CarFleet(targetPos, position, speed);
 Console.WriteLine("This many car Fleets exist at "+ targetPos + ": " + CarFleetCount);
+
+int[] heights = [7,1,7,2,2,4];
+int largestRectangleinHistogram = solution.LargestRectangleArea(heights);
+Console.WriteLine("Largest area of a rectangle in the histogram is " + largestRectangleinHistogram);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// 05-Binary Search ////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+int[] binarySearchValues = [-1,0,2,4,6,8]; int binarySearchtarget = 6;
+int binarySearchResult = solution.Search(binarySearchValues, binarySearchtarget);
+Console.WriteLine("The index of the binary searched target is " + binarySearchResult);
