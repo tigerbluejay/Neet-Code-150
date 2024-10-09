@@ -190,3 +190,11 @@ Console.WriteLine("Largest area of a rectangle in the histogram is " + largestRe
 int[] binarySearchValues = [-1,0,2,4,6,8]; int binarySearchtarget = 6;
 int binarySearchResult = solution.Search(binarySearchValues, binarySearchtarget);
 Console.WriteLine("The index of the binary searched target is " + binarySearchResult);
+
+int[][] matrix = {[1,2,3,4],[5,6,7,8],[9,10,11,12]}; int matrixTarget = 11;
+bool isTargetintheMatrix = solution.SearchMatrix(matrix, matrixTarget);
+Console.WriteLine("The target is in the matrix: "+ isTargetintheMatrix);
+
+int[] pilesofBananas = [1,4,3,2]; int maxHourstoEatBananas = 9;
+int minimumBananaEatingSpeed = solution.MinEatingSpeed(pilesofBananas, maxHourstoEatBananas);
+Console.WriteLine("The minimum banana eating speed is "+ minimumBananaEatingSpeed + " bananas per hour");
