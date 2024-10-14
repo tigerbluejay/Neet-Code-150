@@ -198,3 +198,11 @@ Console.WriteLine("The target is in the matrix: "+ isTargetintheMatrix);
 int[] pilesofBananas = [1,4,3,2]; int maxHourstoEatBananas = 9;
 int minimumBananaEatingSpeed = solution.MinEatingSpeed(pilesofBananas, maxHourstoEatBananas);
 Console.WriteLine("The minimum banana eating speed is "+ minimumBananaEatingSpeed + " bananas per hour");
+
+int[] rotatedArray = [3,4,5,6,1,2];
+int minimumValue = solution.FindMin(rotatedArray);
+Console.WriteLine("Minimum value of rotated array is: " + minimumValue);
+
+int[] rotatedArray2 = [3,4,5,6,1,2]; int targetofRotatedArray = 6;
+int indexofTarget = solution.SearchTarget(rotatedArray2, targetofRotatedArray);
+Console.WriteLine("Index of rotated array target is " + indexofTarget);
