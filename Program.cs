@@ -206,3 +206,18 @@ Console.WriteLine("Minimum value of rotated array is: " + minimumValue);
 int[] rotatedArray2 = [3,4,5,6,1,2]; int targetofRotatedArray = 6;
 int indexofTarget = solution.SearchTarget(rotatedArray2, targetofRotatedArray);
 Console.WriteLine("Index of rotated array target is " + indexofTarget);
+
+TimeMap bstimeMap = new TimeMap();
+bstimeMap.Set("alice", "happy", 1);
+string bsTimeMapresult1 = bstimeMap.Get("alice", 1);
+string bsTimeMapresult2 = bstimeMap.Get("alice", 2);
+bstimeMap.Set("alice", "sad", 3);
+string bsTimeMapresult3 =bstimeMap.Get("alice", 3);
+bstimeMap.Set("alice", "thrilled", 7);
+string bsTimeMapresult4 = bstimeMap.Get("alice", 6);
+string[] bsTimeMapResults = [bsTimeMapresult1, bsTimeMapresult2, bsTimeMapresult3, bsTimeMapresult4];
+for (int i = 0; i <= bsTimeMapResults.Length - 1; i++ ){
+    int counter = i+1;
+    Console.WriteLine("Result " + counter + ": " + bsTimeMapResults[i]);
+}
+    
