@@ -220,4 +220,9 @@ for (int i = 0; i <= bsTimeMapResults.Length - 1; i++ ){
     int counter = i+1;
     Console.WriteLine("Result " + counter + ": " + bsTimeMapResults[i]);
 }
-    
+
+int[] firstSortedArray = [1,2,3,4,5];
+int[] secondSortedArray = [1,2];
+double medianofTwoSortedArrays = solution.FindMedianSortedArrays(firstSortedArray, secondSortedArray);
+Console.WriteLine("The median of the two sorted arrays is: " + medianofTwoSortedArrays);
+
