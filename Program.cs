@@ -226,3 +226,39 @@ int[] secondSortedArray = [1,2];
 double medianofTwoSortedArrays = solution.FindMedianSortedArrays(firstSortedArray, secondSortedArray);
 Console.WriteLine("The median of the two sorted arrays is: " + medianofTwoSortedArrays);
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// 06-Linked List  /////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// Create nodes
+ListNode node0 = new ListNode(0);
+ListNode node1 = new ListNode(1);
+ListNode node2 = new ListNode(2);
+ListNode node3 = new ListNode(3);
+// Link the nodes together
+node0.next = node1;
+node1.next = node2;
+node2.next = node3;   
+// Set the head of the list
+ListNode head = node0;
+solution.ReverseList(head);
+
+
+// Create nodes
+ListNode node0a = new ListNode(1);
+ListNode node1a = new ListNode(2);
+ListNode node2a = new ListNode(4);
+// Link the nodes together
+node0a.next = node1a;
+node1a.next = node2a;
+// Create nodes
+ListNode node0b = new ListNode(1);
+ListNode node1b = new ListNode(3);
+ListNode node2b = new ListNode(5);
+// Link the nodes together
+node0b.next = node1b;
+node1b.next = node2b;
+// Set the head of the list
+ListNode lista = node0a;
+ListNode listb = node0b;
+solution.MergeTwoLists(lista, listb);
