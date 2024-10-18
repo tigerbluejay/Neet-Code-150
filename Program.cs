@@ -262,3 +262,31 @@ node1b.next = node2b;
 ListNode lista = node0a;
 ListNode listb = node0b;
 solution.MergeTwoLists(lista, listb);
+
+
+// Create nodes
+ListNode nodeA1 = new ListNode(2);
+ListNode nodeA2 = new ListNode(4);
+ListNode nodeA3 = new ListNode(6);
+ListNode nodeA4 = new ListNode(8);
+// Link the nodes together
+nodeA1.next = nodeA2;
+nodeA2.next = nodeA3;
+nodeA3.next = nodeA4;
+// Set the head of the list
+ListNode listhead = nodeA1;
+solution.ReorderList(listhead);
+
+// Create nodes
+ListNode nodeB1 = new ListNode(1);
+ListNode nodeB2 = new ListNode(2);
+ListNode nodeB3 = new ListNode(3);
+ListNode nodeB4 = new ListNode(4);
+// Link the nodes together
+nodeB1.next = nodeB2;
+nodeB2.next = nodeB3;
+nodeB3.next = nodeB4;
+// Set the head of the list
+ListNode listheadB = nodeB1;
+int nodetoRemoveStartingfromEnd = 2; // the nth node to remove starting from the end of the list (so 3)
+solution.RemoveNthFromEnd(listheadB, nodetoRemoveStartingfromEnd);
