@@ -290,3 +290,44 @@ nodeB3.next = nodeB4;
 ListNode listheadB = nodeB1;
 int nodetoRemoveStartingfromEnd = 2; // the nth node to remove starting from the end of the list (so 3)
 solution.RemoveNthFromEnd(listheadB, nodetoRemoveStartingfromEnd);
+
+// Create nodes
+// Input: head = [[3,null],[7,3],[4,0],[5,1]]
+NodeRandom nodeC1 = new NodeRandom(3);
+NodeRandom nodeC2 = new NodeRandom(7);
+NodeRandom nodeC3 = new NodeRandom(4);
+NodeRandom nodeC4 = new NodeRandom(5);
+// Link the nodes together
+nodeC1.next = nodeC2;
+nodeC2.next = nodeC3;
+nodeC3.next = nodeC4;
+nodeC4.next = null;
+// Set the random values
+nodeC1.random = null;
+nodeC2.random = nodeC4;
+nodeC3.random = nodeC1;
+nodeC4.random = nodeC2;
+// Set the head of the list
+NodeRandom listheadC = nodeC1;
+solution.CopyRandomList(listheadC);
+
+// Input: l1 = [1,2,3], l2 = [4,5,6]
+// create the nodes of the lists
+ListNode nodeD1 = new ListNode(1);
+ListNode nodeD2 = new ListNode(2);
+ListNode nodeD3 = new ListNode(3);
+ListNode nodeE1 = new ListNode(4);
+ListNode nodeE2 = new ListNode(5);
+ListNode nodeE3 = new ListNode(6);
+// Link the nodes together
+nodeD1.next = nodeD2;
+nodeD2.next = nodeD3;
+nodeD3.next = null;
+nodeE1.next = nodeE2;
+nodeE2.next = nodeE3;
+nodeE3.next = null;
+// Set the heads of the lists
+ListNode listheadD = nodeD1;
+ListNode listheadE = nodeE1;
+// call the function
+solution.AddTwoNumbers(listheadD, listheadE);
