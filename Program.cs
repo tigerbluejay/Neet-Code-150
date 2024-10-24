@@ -352,3 +352,11 @@ solution.HasCycle(cycleheadF);
 int[] numswithOneDuplicate = [1,2,3,2,2];
 solution.FindDuplicate(numswithOneDuplicate);
 
+int capacity = 2;
+LRUCache lRUCache = new LRUCache(capacity);
+lRUCache.Put(1, 10);  // cache: {1=10}
+lRUCache.Get(1);      // return 10
+lRUCache.Put(2, 20);  // cache: {1=10, 2=20}
+lRUCache.Put(3, 30);  // cache: {2=20, 3=30}, key=1 was evicted
+lRUCache.Get(2);      // returns 20 
+lRUCache.Get(1);      // return -1 (not found)
