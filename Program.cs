@@ -331,3 +331,24 @@ ListNode listheadD = nodeD1;
 ListNode listheadE = nodeE1;
 // call the function
 solution.AddTwoNumbers(listheadD, listheadE);
+
+
+// create the nodes of the lists
+CycleListNode nodeF1 = new CycleListNode(1);
+CycleListNode nodeF2 = new CycleListNode(2);
+CycleListNode nodeF3 = new CycleListNode(3);
+CycleListNode nodeF4 = new CycleListNode(4);
+// Link the nodes together
+nodeF1.next = nodeF2;
+nodeF2.next = nodeF3;
+nodeF3.next = nodeF4;
+nodeF4.next = nodeF2;
+// Set the heads of the lists
+CycleListNode cycleheadF = nodeF1;
+// call the function
+solution.HasCycle(cycleheadF);
+
+
+int[] numswithOneDuplicate = [1,2,3,2,2];
+solution.FindDuplicate(numswithOneDuplicate);
+
