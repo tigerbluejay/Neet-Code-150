@@ -360,3 +360,37 @@ lRUCache.Put(2, 20);  // cache: {1=10, 2=20}
 lRUCache.Put(3, 30);  // cache: {2=20, 3=30}, key=1 was evicted
 lRUCache.Get(2);      // returns 20 
 lRUCache.Get(1);      // return -1 (not found)
+
+
+// Input: lists = [[1,2,4],[1,3,5],[3,6]]
+// create the nodes of the lists
+ListNode nodeG1 = new ListNode(1);
+ListNode nodeG2 = new ListNode(2);
+ListNode nodeG3 = new ListNode(4);
+ListNode nodeH1 = new ListNode(1);
+ListNode nodeH2 = new ListNode(3);
+ListNode nodeH3 = new ListNode(5);
+ListNode nodeI1 = new ListNode(3);
+ListNode nodeI2 = new ListNode(6);
+// Link the nodes together
+nodeG1.next = nodeG2;
+nodeG2.next = nodeG3;
+nodeG3.next = null;
+nodeH1.next = nodeH2;
+nodeH2.next = nodeH3;
+nodeH3.next = null;
+nodeI1.next = nodeI2;
+nodeI2.next = null;
+// Set the heads of the lists
+ListNode listheadG = nodeG1;
+ListNode listheadH = nodeH1;
+ListNode listheadI = nodeI1;
+// Create array
+ListNode[] lists = new ListNode[3];
+// Assign the heads to the array
+// Assign the list heads to the array elements
+lists[0] = listheadG;
+lists[1] = listheadH;
+lists[2] = listheadI;
+// call the function
+solution.MergeKLists(lists);
