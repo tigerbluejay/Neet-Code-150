@@ -394,3 +394,24 @@ lists[1] = listheadH;
 lists[2] = listheadI;
 // call the function
 solution.MergeKLists(lists);
+
+// Input: head = [1,2,3,4,5,6], k = 3
+int kval = 3;
+// create the nodes of the lists
+ListNode nodeJ1 = new ListNode(1);
+ListNode nodeJ2 = new ListNode(2);
+ListNode nodeJ3 = new ListNode(3);
+ListNode nodeJ4 = new ListNode(4);
+ListNode nodeJ5 = new ListNode(5);
+ListNode nodeJ6 = new ListNode(6);
+// Link the nodes together
+nodeJ1.next = nodeJ2;
+nodeJ2.next = nodeJ3;
+nodeJ3.next = nodeJ4;
+nodeJ4.next = nodeJ5;
+nodeJ5.next = nodeJ6;
+nodeJ6.next = null;
+// Set the heads of the lists
+ListNode listheadJ = nodeJ1;
+// call the function
+solution.ReverseKGroup(listheadJ, kval);
