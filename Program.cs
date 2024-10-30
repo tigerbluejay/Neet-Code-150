@@ -415,3 +415,39 @@ nodeJ6.next = null;
 ListNode listheadJ = nodeJ1;
 // call the function
 solution.ReverseKGroup(listheadJ, kval);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// 07-Tree  ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// Input: root = [1,2,3,4,5,6,7]
+// Build Tree
+TreeNode treeNodeA4 = new TreeNode(4,null,null);
+TreeNode treeNodeA5 = new TreeNode(5,null,null);
+TreeNode treeNodeA6 = new TreeNode(6,null,null);
+TreeNode treeNodeA7 = new TreeNode(7,null,null);
+TreeNode treeNodeA2 = new TreeNode(2,treeNodeA4,treeNodeA5);
+TreeNode treeNodeA3 = new TreeNode(3,treeNodeA6,treeNodeA7);
+TreeNode treeNodeA1 = new TreeNode(1,treeNodeA2,treeNodeA3);
+// call function
+solution.InvertTree(treeNodeA1);
+
+// Input: root = [1,2,3,null,null,4]
+// Build Tree
+TreeNode treeNodeB4 = new TreeNode(4,null,null);
+TreeNode treeNodeB2 = new TreeNode(2,null,null);
+TreeNode treeNodeB3 = new TreeNode(3,treeNodeB4,null);
+TreeNode treeNodeB1 = new TreeNode(1,treeNodeB2,treeNodeB3);
+// call function
+solution.MaxDepth(treeNodeB1);
+
+// Input: root = [1,null,2,3,4,5]
+// Build Tree
+TreeNode treeNodeC5 = new TreeNode(5,null,null);
+TreeNode treeNodeC4 = new TreeNode(4,null,null);
+TreeNode treeNodeC3 = new TreeNode(3,treeNodeC5,null);
+TreeNode treeNodeC2 = new TreeNode(2,treeNodeC3,treeNodeC4);
+TreeNode treeNodeC1 = new TreeNode(1,null,treeNodeC2);
+// call function
+solution.DiameterOfBinaryTree(treeNodeC1);
