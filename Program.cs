@@ -451,3 +451,23 @@ TreeNode treeNodeC2 = new TreeNode(2,treeNodeC3,treeNodeC4);
 TreeNode treeNodeC1 = new TreeNode(1,null,treeNodeC2);
 // call function
 solution.DiameterOfBinaryTree(treeNodeC1);
+
+// Input: root = [1,2,3,null,null,4] (balanced tree example)
+// Build Tree
+TreeNode treeNodeD4 = new TreeNode(4,null,null);
+TreeNode treeNodeD3 = new TreeNode(3,treeNodeD4,null);
+TreeNode treeNodeD2 = new TreeNode(2,null,null);
+TreeNode treeNodeD1 = new TreeNode(1,treeNodeD2,treeNodeD3);
+// call function
+solution.IsBalanced(treeNodeD1);
+
+// Input: p = [1,2,3], q = [1,2,3]
+// Build Trees
+TreeNode treeNodeE3 = new TreeNode(3,null,null);
+TreeNode treeNodeE2 = new TreeNode(2,null,null);
+TreeNode treeNodeE1 = new TreeNode(1,treeNodeE2,treeNodeE3);
+TreeNode treeNodeF3 = new TreeNode(3,null,null);
+TreeNode treeNodeF2 = new TreeNode(2,null,null);
+TreeNode treeNodeF1 = new TreeNode(1,treeNodeF2,treeNodeF3);
+// call function
+solution.IsSameTree(treeNodeE1,treeNodeF1);
