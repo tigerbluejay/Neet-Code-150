@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Net.Http.Headers;
+
 Console.WriteLine("Hello, World!");
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -471,3 +473,30 @@ TreeNode treeNodeF2 = new TreeNode(2,null,null);
 TreeNode treeNodeF1 = new TreeNode(1,treeNodeF2,treeNodeF3);
 // call function
 solution.IsSameTree(treeNodeE1,treeNodeF1);
+
+
+// Input: root = [1,2,3,4,5], subRoot = [2,4,5]
+// Build Trees
+TreeNode treeNodeG5 = new TreeNode(5,null,null);
+TreeNode treeNodeG4 = new TreeNode(4,null,null);
+TreeNode treeNodeG3 = new TreeNode(3,null,null);
+TreeNode treeNodeG2 = new TreeNode(2,treeNodeG4,treeNodeG5);
+TreeNode treeNodeG1 = new TreeNode(1,treeNodeG2,treeNodeG3);
+TreeNode treeNodeH3 = new TreeNode(5,null,null);
+TreeNode treeNodeH2 = new TreeNode(4,null,null);
+TreeNode treeNodeH1 = new TreeNode(2,treeNodeH2,treeNodeH3);
+// call function
+solution.IsSubtree(treeNodeG1, treeNodeH1);
+
+// Input: root = [5,3,8,1,4,7,9,null,2], p = 3, q = 8 // p = treeNodeI2, q = treeNodeI3
+// Build Trees
+TreeNode treeNodeI8 = new TreeNode(2,null,null);
+TreeNode treeNodeI7 = new TreeNode(9,null,null);
+TreeNode treeNodeI6 = new TreeNode(7,null,null);
+TreeNode treeNodeI5 = new TreeNode(4,null,null);
+TreeNode treeNodeI4 = new TreeNode(1,null,treeNodeI8);
+TreeNode treeNodeI3 = new TreeNode(8,treeNodeI6,treeNodeI7);
+TreeNode treeNodeI2 = new TreeNode(3,treeNodeI4,treeNodeI5);
+TreeNode treeNodeI1 = new TreeNode(5,treeNodeI2,treeNodeI3);
+// call function
+solution.LowestCommonAncestor(treeNodeI1,treeNodeI2,treeNodeI3);
