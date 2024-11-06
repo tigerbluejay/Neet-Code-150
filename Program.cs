@@ -500,3 +500,24 @@ TreeNode treeNodeI2 = new TreeNode(3,treeNodeI4,treeNodeI5);
 TreeNode treeNodeI1 = new TreeNode(5,treeNodeI2,treeNodeI3);
 // call function
 solution.LowestCommonAncestor(treeNodeI1,treeNodeI2,treeNodeI3);
+
+// Input: root = [1,2,3,4,5,6,7]
+TreeNode treeNodeJ7 = new TreeNode(7,null,null);
+TreeNode treeNodeJ6 = new TreeNode(6,null,null);
+TreeNode treeNodeJ5 = new TreeNode(5,null,null);
+TreeNode treeNodeJ4 = new TreeNode(4,null,null);
+TreeNode treeNodeJ3 = new TreeNode(3,treeNodeJ6,treeNodeJ7);
+TreeNode treeNodeJ2 = new TreeNode(2,treeNodeJ4,treeNodeJ5);
+TreeNode treeNodeJ1 = new TreeNode(1,treeNodeJ2,treeNodeJ3);
+// call function
+solution.LevelOrder(treeNodeJ1);
+solution.LevelOrderBFS(treeNodeJ1);
+
+
+// Input: root = [1,2,3]
+TreeNode treeNodeK3 = new TreeNode(3,null,null);
+TreeNode treeNodeK2 = new TreeNode(2,null,null);
+TreeNode treeNodeK1 = new TreeNode(1,treeNodeK2,treeNodeK3);
+// call function
+solution.RightSideView(treeNodeK1);
+solution.RightSideViewBFS(treeNodeK1);
