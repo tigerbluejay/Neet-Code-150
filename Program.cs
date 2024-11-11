@@ -521,3 +521,15 @@ TreeNode treeNodeK1 = new TreeNode(1,treeNodeK2,treeNodeK3);
 // call function
 solution.RightSideView(treeNodeK1);
 solution.RightSideViewBFS(treeNodeK1);
+
+
+// Input: root = [2,1,1,3,null,1,5]
+TreeNode treeNodeL6 = new TreeNode(5,null,null);
+TreeNode treeNodeL5 = new TreeNode(1,null,null);
+TreeNode treeNodeL4 = new TreeNode(3,null,null);
+TreeNode treeNodeL3 = new TreeNode(1,treeNodeL5,treeNodeL6);
+TreeNode treeNodeL2 = new TreeNode(1,treeNodeL4,null);
+TreeNode treeNodeL1 = new TreeNode(2,treeNodeL2,treeNodeL3);
+// call function
+solution.GoodNodes(treeNodeL1);
+solution.GoodNodesBFS(treeNodeL1);

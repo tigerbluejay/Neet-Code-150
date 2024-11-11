@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\josem\\OneDrive\\Escritorio\\23-24 DS&A\\Neet Code 150\\Neet Code 150.csproj": {}
+    "C:\\Users\\josem\\OneDrive\\Escritorio\\23-25 DS&A\\Neet Code 150\\Neet Code 150.csproj": {}
   },
   "projects": {
-    "C:\\Users\\josem\\OneDrive\\Escritorio\\23-24 DS&A\\Neet Code 150\\Neet Code 150.csproj": {
+    "C:\\Users\\josem\\OneDrive\\Escritorio\\23-25 DS&A\\Neet Code 150\\Neet Code 150.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josem\\OneDrive\\Escritorio\\23-24 DS&A\\Neet Code 150\\Neet Code 150.csproj",
+        "projectUniqueName": "C:\\Users\\josem\\OneDrive\\Escritorio\\23-25 DS&A\\Neet Code 150\\Neet Code 150.csproj",
         "projectName": "Neet Code 150",
-        "projectPath": "C:\\Users\\josem\\OneDrive\\Escritorio\\23-24 DS&A\\Neet Code 150\\Neet Code 150.csproj",
+        "projectPath": "C:\\Users\\josem\\OneDrive\\Escritorio\\23-25 DS&A\\Neet Code 150\\Neet Code 150.csproj",
         "packagesPath": "C:\\Users\\josem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josem\\OneDrive\\Escritorio\\23-24 DS&A\\Neet Code 150\\obj\\",
+        "outputPath": "C:\\Users\\josem\\OneDrive\\Escritorio\\23-25 DS&A\\Neet Code 150\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\josem\\AppData\\Roaming\\NuGet\\NuGet.Config",
