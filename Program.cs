@@ -533,3 +533,13 @@ TreeNode treeNodeL1 = new TreeNode(2,treeNodeL2,treeNodeL3);
 // call function
 solution.GoodNodes(treeNodeL1);
 solution.GoodNodesBFS(treeNodeL1);
+
+
+// Input: root = [2,1,3]
+TreeNode treeNodeM3 = new TreeNode(3,null,null);
+TreeNode treeNodeM2 = new TreeNode(1,null,null);
+TreeNode treeNodeM1 = new TreeNode(2,treeNodeM2,treeNodeM3);
+// call function
+solution.IsValidBST(treeNodeM1);
+solution.IsValidBSTDFS(treeNodeM1);
+solution.IsValidBSTBFS(treeNodeM1);
