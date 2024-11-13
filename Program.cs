@@ -543,3 +543,15 @@ TreeNode treeNodeM1 = new TreeNode(2,treeNodeM2,treeNodeM3);
 solution.IsValidBST(treeNodeM1);
 solution.IsValidBSTDFS(treeNodeM1);
 solution.IsValidBSTBFS(treeNodeM1);
+
+// Input: root = [4,3,5,2,null], k = 4
+TreeNode treeNodeN4 = new TreeNode(2,null,null);
+TreeNode treeNodeN3 = new TreeNode(5,null,null);
+TreeNode treeNodeN2 = new TreeNode(3,treeNodeN4,null);
+TreeNode treeNodeN1 = new TreeNode(4,treeNodeN2,treeNodeN3);
+// call function
+solution.KthSmallest(treeNodeN1, 4);
+solution.KthSmallestInOrder(treeNodeN1, 4);
+solution.KthSmallestRecursiveDFS(treeNodeN1, 4);
+solution.KthSmallestIterativeDFS(treeNodeN1, 4);
+// solution.KthSmallestMorris(treeNodeN1, 4);
