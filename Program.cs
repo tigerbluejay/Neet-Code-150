@@ -554,4 +554,12 @@ solution.KthSmallest(treeNodeN1, 4);
 solution.KthSmallestInOrder(treeNodeN1, 4);
 solution.KthSmallestRecursiveDFS(treeNodeN1, 4);
 solution.KthSmallestIterativeDFS(treeNodeN1, 4);
-// solution.KthSmallestMorris(treeNodeN1, 4);
+solution.KthSmallestMorris(treeNodeN1, 4);
+
+// Input: preorder = [1,2,3,4], inorder = [2,1,3,4]
+int[] preorder = {1, 2, 3, 4};
+int[] inorder = {2, 1, 3, 4};
+// call function
+solution.BuildTree(preorder, inorder);
+solution.BuildTreeHashMap(preorder, inorder);
+solution.BuildTreeDFSOptimal(preorder, inorder);
