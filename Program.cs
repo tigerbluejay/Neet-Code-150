@@ -563,3 +563,13 @@ int[] inorder = {2, 1, 3, 4};
 solution.BuildTree(preorder, inorder);
 solution.BuildTreeHashMap(preorder, inorder);
 solution.BuildTreeDFSOptimal(preorder, inorder);
+
+// Input: root = [-15,10,20,null,null,15,5,-5]
+TreeNode treeNodeO5 = new TreeNode(5,null,null);
+TreeNode treeNodeO4 = new TreeNode(15,null,null);
+TreeNode treeNodeO3 = new TreeNode(20,treeNodeO4,treeNodeO5);
+TreeNode treeNodeO2 = new TreeNode(10,null,null);
+TreeNode treeNodeO1 = new TreeNode(-15,treeNodeO2,treeNodeO3);
+// call function
+solution.MaxPathSum(treeNodeO1);
+solution.MaxPathSumDFSOptimal(treeNodeO1);
