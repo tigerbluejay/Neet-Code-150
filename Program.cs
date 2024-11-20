@@ -573,3 +573,17 @@ TreeNode treeNodeO1 = new TreeNode(-15,treeNodeO2,treeNodeO3);
 // call function
 solution.MaxPathSum(treeNodeO1);
 solution.MaxPathSumDFSOptimal(treeNodeO1);
+
+// Input: root = [1,2,3,null,null,4,5]
+TreeNode treeNodeP5 = new TreeNode(5,null,null);
+TreeNode treeNodeP4 = new TreeNode(4,null,null);
+TreeNode treeNodeP3 = new TreeNode(3,treeNodeP4,treeNodeP5);
+TreeNode treeNodeP2 = new TreeNode(2,null,null);
+TreeNode treeNodeP1 = new TreeNode(1,treeNodeP2,treeNodeP3);
+// call function
+var Codecsolution = new Codec();
+string serializedString = Codecsolution.Serialize(treeNodeP1);
+TreeNode treeNodePSolution = Codecsolution.Deserialize(serializedString);
+string serializedStringBFS = Codecsolution.SerializeBFS(treeNodePSolution);
+TreeNode treeNodePSolutionBFS = Codecsolution.DeserializeBFS(serializedStringBFS);
+Console.ReadLine();
