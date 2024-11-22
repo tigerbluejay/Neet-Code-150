@@ -586,4 +586,29 @@ string serializedString = Codecsolution.Serialize(treeNodeP1);
 TreeNode treeNodePSolution = Codecsolution.Deserialize(serializedString);
 string serializedStringBFS = Codecsolution.SerializeBFS(treeNodePSolution);
 TreeNode treeNodePSolutionBFS = Codecsolution.DeserializeBFS(serializedStringBFS);
-Console.ReadLine();
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////// 08-Heap / Priority Queue  ////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+KthLargest kthLargest = new KthLargest(3, [1, 2, 3, 3]);
+var KthLargestoutput = kthLargest.Add(3);   // return 3
+KthLargestoutput = kthLargest.Add(5);   // return 3
+KthLargestoutput = kthLargest.Add(6);   // return 3
+KthLargestoutput = kthLargest.Add(7);   // return 5
+KthLargestoutput = kthLargest.Add(8);   // return 6
+KthLargestHeap kthLargestHeap = new KthLargestHeap(3, [1, 2, 3, 3]);
+var KthLargestHeapoutput = kthLargestHeap.AddHeap(3);   // return 3
+KthLargestHeapoutput = kthLargestHeap.AddHeap(5);   // return 3
+KthLargestHeapoutput = kthLargestHeap.AddHeap(6);   // return 3
+KthLargestHeapoutput = kthLargestHeap.AddHeap(7);   // return 5
+KthLargestHeapoutput = kthLargestHeap.AddHeap(8);   // return 6
+
+// Input: stones = [2,3,6,2,4]
+int[] stones = [2,3,6,2,4];
+var lastStoneWeightoutput = solution.LastStoneWeight(stones);
+var lastStoneWeightBSoutput = solution.LastStoneWeightBS(stones);
+var lastStoneWeightHeapoutput = solution.LastStoneWeightHeap(stones);
+var LastStoneWeightBucketSort = solution.LastStoneWeightBucketSort(stones);
+
