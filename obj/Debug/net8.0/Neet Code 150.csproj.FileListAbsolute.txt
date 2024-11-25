@@ -43,3 +43,18 @@ C:\Users\josem\OneDrive\Escritorio\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\ref
 C:\Users\josem\OneDrive\Escritorio\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.pdb
 C:\Users\josem\OneDrive\Escritorio\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.genruntimeconfig.cache
 C:\Users\josem\OneDrive\Escritorio\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\ref\Neet Code 150.dll
+D:\C Desktop\23-25 DS&A\Neet Code 150\bin\Debug\net8.0\Neet Code 150.exe
+D:\C Desktop\23-25 DS&A\Neet Code 150\bin\Debug\net8.0\Neet Code 150.deps.json
+D:\C Desktop\23-25 DS&A\Neet Code 150\bin\Debug\net8.0\Neet Code 150.runtimeconfig.json
+D:\C Desktop\23-25 DS&A\Neet Code 150\bin\Debug\net8.0\Neet Code 150.dll
+D:\C Desktop\23-25 DS&A\Neet Code 150\bin\Debug\net8.0\Neet Code 150.pdb
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.GeneratedMSBuildEditorConfig.editorconfig
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.AssemblyInfoInputs.cache
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.AssemblyInfo.cs
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.csproj.CoreCompileInputs.cache
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.sourcelink.json
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.dll
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\refint\Neet Code 150.dll
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.pdb
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\Neet Code 150.genruntimeconfig.cache
+D:\C Desktop\23-25 DS&A\Neet Code 150\obj\Debug\net8.0\ref\Neet Code 150.dll

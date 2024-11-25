@@ -612,3 +612,10 @@ var lastStoneWeightBSoutput = solution.LastStoneWeightBS(stones);
 var lastStoneWeightHeapoutput = solution.LastStoneWeightHeap(stones);
 var LastStoneWeightBucketSort = solution.LastStoneWeightBucketSort(stones);
 
+//Input: points = [[0,2],[2,2]], k = 1
+int[][] points = [[0,2],[2,2]];
+int numberofPoints = 1;
+var closestPoints = solution.KClosest(points, numberofPoints);
+var closestPointsMinHeap = solution.KClosestMinHeap(points, numberofPoints);
+var closestPointsMaxHeap = solution.KClosestMaxHeap(points, numberofPoints);
+var closestPointsQuickSelect = solution.KClosestQS(points, numberofPoints);
