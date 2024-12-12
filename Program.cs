@@ -619,3 +619,10 @@ var closestPoints = solution.KClosest(points, numberofPoints);
 var closestPointsMinHeap = solution.KClosestMinHeap(points, numberofPoints);
 var closestPointsMaxHeap = solution.KClosestMaxHeap(points, numberofPoints);
 var closestPointsQuickSelect = solution.KClosestQS(points, numberofPoints);
+
+// Input: nums = [2,3,1,5,4], k = 2
+int[] list = [2,3,1,5,4]; int kthterm = 2;
+var kthLargestElement = solution.FindKthLargest(list,kthterm);
+var kthLargestElementMH = solution.FindKthLargestMH(list,kthterm);
+var kthLargestElementQS = solution.FindKthLargestQS(list,kthterm);
+var kthLargestElementQSO = solution.FindKthLargestQSO(list,kthterm);
