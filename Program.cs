@@ -303,9 +303,9 @@ NodeRandom nodeC4 = new NodeRandom(5);
 nodeC1.next = nodeC2;
 nodeC2.next = nodeC3;
 nodeC3.next = nodeC4;
-nodeC4.next = null;
+nodeC4.next = null!;
 // Set the random values
-nodeC1.random = null;
+nodeC1.random = null!;
 nodeC2.random = nodeC4;
 nodeC3.random = nodeC1;
 nodeC4.random = nodeC2;
@@ -324,10 +324,10 @@ ListNode nodeE3 = new ListNode(6);
 // Link the nodes together
 nodeD1.next = nodeD2;
 nodeD2.next = nodeD3;
-nodeD3.next = null;
+nodeD3.next = null!;
 nodeE1.next = nodeE2;
 nodeE2.next = nodeE3;
-nodeE3.next = null;
+nodeE3.next = null!;
 // Set the heads of the lists
 ListNode listheadD = nodeD1;
 ListNode listheadE = nodeE1;
@@ -377,12 +377,12 @@ ListNode nodeI2 = new ListNode(6);
 // Link the nodes together
 nodeG1.next = nodeG2;
 nodeG2.next = nodeG3;
-nodeG3.next = null;
+nodeG3.next = null!;
 nodeH1.next = nodeH2;
 nodeH2.next = nodeH3;
-nodeH3.next = null;
+nodeH3.next = null!;
 nodeI1.next = nodeI2;
-nodeI2.next = null;
+nodeI2.next = null!;
 // Set the heads of the lists
 ListNode listheadG = nodeG1;
 ListNode listheadH = nodeH1;
@@ -412,7 +412,7 @@ nodeJ2.next = nodeJ3;
 nodeJ3.next = nodeJ4;
 nodeJ4.next = nodeJ5;
 nodeJ5.next = nodeJ6;
-nodeJ6.next = null;
+nodeJ6.next = null!;
 // Set the heads of the lists
 ListNode listheadJ = nodeJ1;
 // call the function
@@ -425,10 +425,10 @@ solution.ReverseKGroup(listheadJ, kval);
 
 // Input: root = [1,2,3,4,5,6,7]
 // Build Tree
-TreeNode treeNodeA4 = new TreeNode(4,null,null);
-TreeNode treeNodeA5 = new TreeNode(5,null,null);
-TreeNode treeNodeA6 = new TreeNode(6,null,null);
-TreeNode treeNodeA7 = new TreeNode(7,null,null);
+TreeNode treeNodeA4 = new TreeNode(4,null!,null!);
+TreeNode treeNodeA5 = new TreeNode(5,null!,null!);
+TreeNode treeNodeA6 = new TreeNode(6,null!,null!);
+TreeNode treeNodeA7 = new TreeNode(7,null!,null!);
 TreeNode treeNodeA2 = new TreeNode(2,treeNodeA4,treeNodeA5);
 TreeNode treeNodeA3 = new TreeNode(3,treeNodeA6,treeNodeA7);
 TreeNode treeNodeA1 = new TreeNode(1,treeNodeA2,treeNodeA3);
@@ -437,39 +437,39 @@ solution.InvertTree(treeNodeA1);
 
 // Input: root = [1,2,3,null,null,4]
 // Build Tree
-TreeNode treeNodeB4 = new TreeNode(4,null,null);
-TreeNode treeNodeB2 = new TreeNode(2,null,null);
-TreeNode treeNodeB3 = new TreeNode(3,treeNodeB4,null);
+TreeNode treeNodeB4 = new TreeNode(4,null!,null!);
+TreeNode treeNodeB2 = new TreeNode(2,null!,null!);
+TreeNode treeNodeB3 = new TreeNode(3,treeNodeB4,null!);
 TreeNode treeNodeB1 = new TreeNode(1,treeNodeB2,treeNodeB3);
 // call function
 solution.MaxDepth(treeNodeB1);
 
 // Input: root = [1,null,2,3,4,5]
 // Build Tree
-TreeNode treeNodeC5 = new TreeNode(5,null,null);
-TreeNode treeNodeC4 = new TreeNode(4,null,null);
-TreeNode treeNodeC3 = new TreeNode(3,treeNodeC5,null);
+TreeNode treeNodeC5 = new TreeNode(5,null!,null!);
+TreeNode treeNodeC4 = new TreeNode(4,null!,null!);
+TreeNode treeNodeC3 = new TreeNode(3,treeNodeC5,null!);
 TreeNode treeNodeC2 = new TreeNode(2,treeNodeC3,treeNodeC4);
-TreeNode treeNodeC1 = new TreeNode(1,null,treeNodeC2);
+TreeNode treeNodeC1 = new TreeNode(1,null!,treeNodeC2);
 // call function
 solution.DiameterOfBinaryTree(treeNodeC1);
 
 // Input: root = [1,2,3,null,null,4] (balanced tree example)
 // Build Tree
-TreeNode treeNodeD4 = new TreeNode(4,null,null);
-TreeNode treeNodeD3 = new TreeNode(3,treeNodeD4,null);
-TreeNode treeNodeD2 = new TreeNode(2,null,null);
+TreeNode treeNodeD4 = new TreeNode(4,null!,null!);
+TreeNode treeNodeD3 = new TreeNode(3,treeNodeD4,null!);
+TreeNode treeNodeD2 = new TreeNode(2,null!,null!);
 TreeNode treeNodeD1 = new TreeNode(1,treeNodeD2,treeNodeD3);
 // call function
 solution.IsBalanced(treeNodeD1);
 
 // Input: p = [1,2,3], q = [1,2,3]
 // Build Trees
-TreeNode treeNodeE3 = new TreeNode(3,null,null);
-TreeNode treeNodeE2 = new TreeNode(2,null,null);
+TreeNode treeNodeE3 = new TreeNode(3,null!,null!);
+TreeNode treeNodeE2 = new TreeNode(2,null!,null!);
 TreeNode treeNodeE1 = new TreeNode(1,treeNodeE2,treeNodeE3);
-TreeNode treeNodeF3 = new TreeNode(3,null,null);
-TreeNode treeNodeF2 = new TreeNode(2,null,null);
+TreeNode treeNodeF3 = new TreeNode(3,null!,null!);
+TreeNode treeNodeF2 = new TreeNode(2,null!,null!);
 TreeNode treeNodeF1 = new TreeNode(1,treeNodeF2,treeNodeF3);
 // call function
 solution.IsSameTree(treeNodeE1,treeNodeF1);
@@ -477,24 +477,24 @@ solution.IsSameTree(treeNodeE1,treeNodeF1);
 
 // Input: root = [1,2,3,4,5], subRoot = [2,4,5]
 // Build Trees
-TreeNode treeNodeG5 = new TreeNode(5,null,null);
-TreeNode treeNodeG4 = new TreeNode(4,null,null);
-TreeNode treeNodeG3 = new TreeNode(3,null,null);
+TreeNode treeNodeG5 = new TreeNode(5,null!,null!);
+TreeNode treeNodeG4 = new TreeNode(4,null!,null!);
+TreeNode treeNodeG3 = new TreeNode(3,null!,null!);
 TreeNode treeNodeG2 = new TreeNode(2,treeNodeG4,treeNodeG5);
 TreeNode treeNodeG1 = new TreeNode(1,treeNodeG2,treeNodeG3);
-TreeNode treeNodeH3 = new TreeNode(5,null,null);
-TreeNode treeNodeH2 = new TreeNode(4,null,null);
+TreeNode treeNodeH3 = new TreeNode(5,null!,null!);
+TreeNode treeNodeH2 = new TreeNode(4,null!,null!);
 TreeNode treeNodeH1 = new TreeNode(2,treeNodeH2,treeNodeH3);
 // call function
 solution.IsSubtree(treeNodeG1, treeNodeH1);
 
 // Input: root = [5,3,8,1,4,7,9,null,2], p = 3, q = 8 // p = treeNodeI2, q = treeNodeI3
 // Build Trees
-TreeNode treeNodeI8 = new TreeNode(2,null,null);
-TreeNode treeNodeI7 = new TreeNode(9,null,null);
-TreeNode treeNodeI6 = new TreeNode(7,null,null);
-TreeNode treeNodeI5 = new TreeNode(4,null,null);
-TreeNode treeNodeI4 = new TreeNode(1,null,treeNodeI8);
+TreeNode treeNodeI8 = new TreeNode(2,null!,null!);
+TreeNode treeNodeI7 = new TreeNode(9,null!,null!);
+TreeNode treeNodeI6 = new TreeNode(7,null!,null!);
+TreeNode treeNodeI5 = new TreeNode(4,null!,null!);
+TreeNode treeNodeI4 = new TreeNode(1,null!,treeNodeI8);
 TreeNode treeNodeI3 = new TreeNode(8,treeNodeI6,treeNodeI7);
 TreeNode treeNodeI2 = new TreeNode(3,treeNodeI4,treeNodeI5);
 TreeNode treeNodeI1 = new TreeNode(5,treeNodeI2,treeNodeI3);
@@ -502,10 +502,10 @@ TreeNode treeNodeI1 = new TreeNode(5,treeNodeI2,treeNodeI3);
 solution.LowestCommonAncestor(treeNodeI1,treeNodeI2,treeNodeI3);
 
 // Input: root = [1,2,3,4,5,6,7]
-TreeNode treeNodeJ7 = new TreeNode(7,null,null);
-TreeNode treeNodeJ6 = new TreeNode(6,null,null);
-TreeNode treeNodeJ5 = new TreeNode(5,null,null);
-TreeNode treeNodeJ4 = new TreeNode(4,null,null);
+TreeNode treeNodeJ7 = new TreeNode(7,null!,null!);
+TreeNode treeNodeJ6 = new TreeNode(6,null!,null!);
+TreeNode treeNodeJ5 = new TreeNode(5,null!,null!);
+TreeNode treeNodeJ4 = new TreeNode(4,null!,null!);
 TreeNode treeNodeJ3 = new TreeNode(3,treeNodeJ6,treeNodeJ7);
 TreeNode treeNodeJ2 = new TreeNode(2,treeNodeJ4,treeNodeJ5);
 TreeNode treeNodeJ1 = new TreeNode(1,treeNodeJ2,treeNodeJ3);
@@ -515,8 +515,8 @@ solution.LevelOrderBFS(treeNodeJ1);
 
 
 // Input: root = [1,2,3]
-TreeNode treeNodeK3 = new TreeNode(3,null,null);
-TreeNode treeNodeK2 = new TreeNode(2,null,null);
+TreeNode treeNodeK3 = new TreeNode(3,null!,null!);
+TreeNode treeNodeK2 = new TreeNode(2,null!,null!);
 TreeNode treeNodeK1 = new TreeNode(1,treeNodeK2,treeNodeK3);
 // call function
 solution.RightSideView(treeNodeK1);
@@ -524,11 +524,11 @@ solution.RightSideViewBFS(treeNodeK1);
 
 
 // Input: root = [2,1,1,3,null,1,5]
-TreeNode treeNodeL6 = new TreeNode(5,null,null);
-TreeNode treeNodeL5 = new TreeNode(1,null,null);
-TreeNode treeNodeL4 = new TreeNode(3,null,null);
+TreeNode treeNodeL6 = new TreeNode(5,null!,null!);
+TreeNode treeNodeL5 = new TreeNode(1,null!,null!);
+TreeNode treeNodeL4 = new TreeNode(3,null!,null!);
 TreeNode treeNodeL3 = new TreeNode(1,treeNodeL5,treeNodeL6);
-TreeNode treeNodeL2 = new TreeNode(1,treeNodeL4,null);
+TreeNode treeNodeL2 = new TreeNode(1,treeNodeL4,null!);
 TreeNode treeNodeL1 = new TreeNode(2,treeNodeL2,treeNodeL3);
 // call function
 solution.GoodNodes(treeNodeL1);
@@ -536,8 +536,8 @@ solution.GoodNodesBFS(treeNodeL1);
 
 
 // Input: root = [2,1,3]
-TreeNode treeNodeM3 = new TreeNode(3,null,null);
-TreeNode treeNodeM2 = new TreeNode(1,null,null);
+TreeNode treeNodeM3 = new TreeNode(3,null!,null!);
+TreeNode treeNodeM2 = new TreeNode(1,null!,null!);
 TreeNode treeNodeM1 = new TreeNode(2,treeNodeM2,treeNodeM3);
 // call function
 solution.IsValidBST(treeNodeM1);
@@ -545,9 +545,9 @@ solution.IsValidBSTDFS(treeNodeM1);
 solution.IsValidBSTBFS(treeNodeM1);
 
 // Input: root = [4,3,5,2,null], k = 4
-TreeNode treeNodeN4 = new TreeNode(2,null,null);
-TreeNode treeNodeN3 = new TreeNode(5,null,null);
-TreeNode treeNodeN2 = new TreeNode(3,treeNodeN4,null);
+TreeNode treeNodeN4 = new TreeNode(2,null!,null!);
+TreeNode treeNodeN3 = new TreeNode(5,null!,null!);
+TreeNode treeNodeN2 = new TreeNode(3,treeNodeN4,null!);
 TreeNode treeNodeN1 = new TreeNode(4,treeNodeN2,treeNodeN3);
 // call function
 solution.KthSmallest(treeNodeN1, 4);
@@ -565,20 +565,20 @@ solution.BuildTreeHashMap(preorder, inorder);
 solution.BuildTreeDFSOptimal(preorder, inorder);
 
 // Input: root = [-15,10,20,null,null,15,5,-5]
-TreeNode treeNodeO5 = new TreeNode(5,null,null);
-TreeNode treeNodeO4 = new TreeNode(15,null,null);
+TreeNode treeNodeO5 = new TreeNode(5,null!,null!);
+TreeNode treeNodeO4 = new TreeNode(15,null!,null!);
 TreeNode treeNodeO3 = new TreeNode(20,treeNodeO4,treeNodeO5);
-TreeNode treeNodeO2 = new TreeNode(10,null,null);
+TreeNode treeNodeO2 = new TreeNode(10,null!,null!);
 TreeNode treeNodeO1 = new TreeNode(-15,treeNodeO2,treeNodeO3);
 // call function
 solution.MaxPathSum(treeNodeO1);
 solution.MaxPathSumDFSOptimal(treeNodeO1);
 
 // Input: root = [1,2,3,null,null,4,5]
-TreeNode treeNodeP5 = new TreeNode(5,null,null);
-TreeNode treeNodeP4 = new TreeNode(4,null,null);
+TreeNode treeNodeP5 = new TreeNode(5,null!,null!);
+TreeNode treeNodeP4 = new TreeNode(4,null!,null!);
 TreeNode treeNodeP3 = new TreeNode(3,treeNodeP4,treeNodeP5);
-TreeNode treeNodeP2 = new TreeNode(2,null,null);
+TreeNode treeNodeP2 = new TreeNode(2,null!,null!);
 TreeNode treeNodeP1 = new TreeNode(1,treeNodeP2,treeNodeP3);
 // call function
 var Codecsolution = new Codec();
@@ -619,3 +619,261 @@ var closestPoints = solution.KClosest(points, numberofPoints);
 var closestPointsMinHeap = solution.KClosestMinHeap(points, numberofPoints);
 var closestPointsMaxHeap = solution.KClosestMaxHeap(points, numberofPoints);
 var closestPointsQuickSelect = solution.KClosestQS(points, numberofPoints);
+
+// Input: nums = [2,3,1,5,4], k = 2
+int[] list = [2,3,1,5,4]; int kthterm = 2;
+var kthLargestElement = solution.FindKthLargest(list,kthterm);
+var kthLargestElementMH = solution.FindKthLargestMH(list,kthterm);
+var kthLargestElementQS = solution.FindKthLargestQS(list,kthterm);
+var kthLargestElementQSO = solution.FindKthLargestQSO(list,kthterm);
+
+// Test starting here:
+
+// Input: tasks = ["X", "X", "Y", "Y"], n = 2
+char[] taskSchedulerTasks = ['X', 'X', 'Y', 'Y'];
+int GPUlifecycles = 2;
+int taskSchedulerBruteForce = solution.LeastIntervalBruteForce(taskSchedulerTasks, GPUlifecycles);
+int taskSchedulerMaxHeap = solution.LeastIntervalMaxHeap(taskSchedulerTasks, GPUlifecycles);
+int taskSchedulerGreedy = solution.LeastIntervalGreedy(taskSchedulerTasks, GPUlifecycles);
+int taskSchedulerMath = solution.LeastIntervalMath(taskSchedulerTasks, GPUlifecycles);
+
+/* Input:
+["Twitter",
+"postTweet", [1, 10], "postTweet", [2, 20], "getNewsFeed", [1], "getNewsFeed", [2],
+"follow", [1, 2], "getNewsFeed", [1], "getNewsFeed", [2],
+"unfollow", [1, 2], "getNewsFeed", [1]]
+*/
+TwitterS twitterS = new TwitterS();
+twitterS.PostTweet(1, 10); // User 1 posts a new tweet with id = 10.
+twitterS.PostTweet(2, 20); // User 2 posts a new tweet with id = 20.
+List<int> feedResult1 = twitterS.GetNewsFeed(1);   // User 1's news feed should only contain their own tweets -> [10].
+List<int> feedResult2 = twitterS.GetNewsFeed(2);   // User 2's news feed should only contain their own tweets -> [20].
+
+twitterS.Follow(1, 2);     // User 1 follows user 2.
+List<int> feedResult3 = twitterS.GetNewsFeed(1);   // User 1's news feed should contain both tweets from user 1 and user 2 -> [20, 10].
+List<int> feedResult4 = twitterS.GetNewsFeed(2);   // User 2's news feed should still only contain their own tweets -> [20].
+
+twitterS.Unfollow(1, 2);   // User 1 follows user 2.
+List<int> feedResult5 = twitterS.GetNewsFeed(1);   // User 1's news feed should only contain their own tweets -> [10].
+
+TwitterH twitterH = new TwitterH();
+twitterH.PostTweet(1, 10); // User 1 posts a new tweet with id = 10.
+twitterH.PostTweet(2, 20); // User 2 posts a new tweet with id = 20.
+List<int> feedResult6 = twitterH.GetNewsFeed(1);   // User 1's news feed should only contain their own tweets -> [10].
+List<int> feedResult7 = twitterH.GetNewsFeed(2);   // User 2's news feed should only contain their own tweets -> [20].
+
+twitterH.Follow(1, 2);     // User 1 follows user 2.
+List<int> feedResult8 = twitterH.GetNewsFeed(1);   // User 1's news feed should contain both tweets from user 1 and user 2 -> [20, 10].
+List<int> feedResult9 = twitterH.GetNewsFeed(2);   // User 2's news feed should still only contain their own tweets -> [20].
+
+twitterS.Unfollow(1, 2);   // User 1 follows user 2.
+List<int> feedResult10 = twitterH.GetNewsFeed(1);
+
+/*
+Input:
+["MedianFinder", "addNum", "1", "findMedian", "addNum", "3" "findMedian",
+"addNum", "2", "findMedian"]
+*/
+
+MedianFinderS medianFinderS = new MedianFinderS();
+medianFinderS.AddNum(1);
+double medianS1 = medianFinderS.FindMedian();
+medianFinderS.AddNum(3);
+double medianS2 = medianFinderS.FindMedian();
+medianFinderS.AddNum(2);
+double medianS3 = medianFinderS.FindMedian();
+
+MedianFinderH medianFinderH = new MedianFinderH();
+medianFinderH.AddNum(1);
+double medianH1 = medianFinderH.FindMedian();
+medianFinderH.AddNum(3);
+double medianH2 = medianFinderH.FindMedian();
+medianFinderH.AddNum(2);
+double medianH3 = medianFinderH.FindMedian();
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 09 - Backtracking  /////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// Input: nums = [1, 2, 3]
+int[] subsetNums = [1, 2, 3];
+List<List<int>> subsetsOutuputBacktracking = solution.Subsets(subsetNums);
+List<List<int>> subsetsOutuputIterative = solution.SubsetsI(subsetNums);
+List<List<int>> subsetsOutuputBitManipulation = solution.SubsetsBM(subsetNums);
+
+// Input: nums = [2,5,6,9] target = 9
+int[] combinationSumNums = [2,5,6,9]; int combinationSumTarget = 9;
+List<List<int>> combinationSumBacktracking = solution.CombinationSum(combinationSumNums, combinationSumTarget);
+List<List<int>> combinationSumBacktrackingOptimal = solution.CombinationSumO(combinationSumNums, combinationSumTarget);
+
+// Input: candidates = [9,2,2,4,6,1,5], target = 8
+int[] candidatesCombinationSumII = [9,2,2,4,6,1,5]; int targetCombinationSumII = 8;
+List<List<int>> combinationSumIIBruteForce = solution.CombinationSum2BF(candidatesCombinationSumII, targetCombinationSumII);
+List<List<int>> combinationSumIIBacktracking = solution.CombinationSum2BT(candidatesCombinationSumII, targetCombinationSumII);
+List<List<int>> combinationSumIIBacktrackingHashMap = solution.CombinationSum2BTHM(candidatesCombinationSumII, targetCombinationSumII);
+List<List<int>> combinationSumIIBacktrackingOptimal = solution.CombinationSum2BTO(candidatesCombinationSumII, targetCombinationSumII);
+
+// Input: nums = [1,2,3]
+int[] permutationNums = [1,2,3];
+List<List<int>> permutationsres1 = solution.PermuteRecursion(permutationNums);
+List<List<int>> permutationsres2 = solution.PermuteIteration(permutationNums);
+List<List<int>> permutationsres3 = solution.PermuteBT(permutationNums);
+List<List<int>> permutationsres4 = solution.PermuteBitMask(permutationNums);
+List<List<int>> permutationsres5 = solution.PermuteBTOptimal(permutationNums);
+
+// Input: nums = [1,2,1]
+int[] subsetsIINums = [1,2,1];
+List<List<int>> subsets2res1 = solution.SubsetsWithDup(subsetsIINums);
+List<List<int>> subsets2res2 = solution.SubsetsWithDupBT(subsetsIINums);
+List<List<int>> subsets2res3 = solution.SubsetsWithDupBTII(subsetsIINums);
+List<List<int>> subsets2res4 = solution.SubsetsWithDupIteration(subsetsIINums);
+
+// Input: 
+// board = [
+//  ["A","B","C","D"],
+//  ["S","A","A","T"],
+//  ["A","C","A","E"]
+// ],
+// word = "CAT"
+char[][] WSboard = new char[][] {
+    new char[] { 'A', 'B', 'C', 'D' },
+    new char[] { 'S', 'A', 'A', 'T' },
+    new char[] { 'A', 'C', 'A', 'E' }
+}; // this is 2D jagged Array
+// which FYI is different from a multidimensional array such as
+// that used in the body of the "ExistVA" algorithm below:
+// Multidimensional array initialization:
+// char[,] board = {
+//    { 'A', 'B', 'C', 'D' },
+//    { 'S', 'A', 'A', 'T' },
+//    { 'A', 'C', 'A', 'E' }
+// };
+string word = "CAT";
+bool wordsearchresBTHashSet = solution.ExistHS(WSboard, word);
+bool wordsearchresBTVisitedArray = solution.ExistVA(WSboard, word);
+bool wordsearchresBTOptimal = solution.ExistOptimal(WSboard, word);
+
+// Input: s = "aab"
+string palindromeString = "aab";
+List<List<string>> paliPartitionres1 = solution.PartitionBT1(palindromeString);
+List<List<string>> paliPartitionres2 = solution.PartitionBT2(palindromeString);
+List<List<string>> paliPartitionres3 = solution.PartitionBT3(palindromeString);
+List<List<string>> paliPartitionres4 = solution.PartitionRecursion(palindromeString);
+
+// Input: digits = "34"
+string phoneDigits = "34";
+List<string> LetterCombinationsRes1 = solution.LetterCombinationsBT(phoneDigits);
+List<string> LetterCombinationsRes2 = solution.LetterCombinationsIT(phoneDigits);
+
+// Input: queens = 4;
+int queens = 4;
+List<List<string>> nQueensres1 = solution.SolveNQueensBT(queens);
+List<List<string>> nQueensres2 = solution.SolveNQueensBTHS(queens);
+List<List<string>> nQueensres3 = solution.SolveNQueensBTVA(queens);
+List<List<string>> nQueensres4 = solution.SolveNQueensBTBM(queens);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 10 - Tries  ////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+PrefixTreeA prefixTree = new PrefixTreeA();
+prefixTree.Insert("dog");
+prefixTree.Search("dog");    // return true
+prefixTree.Search("do");     // return false
+prefixTree.StartsWith("do"); // return true
+prefixTree.Insert("do");
+prefixTree.Search("do");     // return true
+PrefixTreeHM prefixTree2 = new PrefixTreeHM();
+prefixTree2.Insert("dog");
+prefixTree2.Search("dog");    // return true
+prefixTree2.Search("do");     // return false
+prefixTree2.StartsWith("do"); // return true
+prefixTree2.Insert("do");
+prefixTree2.Search("do");     // return true
+
+WordDictionaryBF wordDictionary = new WordDictionaryBF();
+wordDictionary.AddWord("day");
+wordDictionary.AddWord("bay");
+wordDictionary.AddWord("may");
+wordDictionary.Search("say"); // return false
+wordDictionary.Search("day"); // return true
+wordDictionary.Search(".ay"); // return true
+wordDictionary.Search("b.."); // return true
+WordDictionaryDFS wordDictionary2 = new WordDictionaryDFS();
+wordDictionary2.AddWord("day");
+wordDictionary2.AddWord("bay");
+wordDictionary2.AddWord("may");
+wordDictionary2.Search("say"); // return false
+wordDictionary2.Search("day"); // return true
+wordDictionary2.Search(".ay"); // return true
+wordDictionary2.Search("b.."); // return true
+
+/*
+Input:
+board = [
+  ["a","b","c","d"],
+  ["s","a","a","t"],
+  ["a","c","k","e"],
+  ["a","c","d","n"]
+],
+words = ["bat","cat","back","backend","stack"]
+*/
+char[][] WS2board = new char[][] {
+    new char[] { 'a', 'b', 'c', 'd' },
+    new char[] { 's', 'a', 'a', 't' }, 
+    new char[] { 'a', 'c', 'k', 'e' }, 
+    new char[] { 'a', 'c', 'd', 'n' }  
+};
+string[] WS2words = ["bat","cat","back","backend","stack"];
+List<string> WS2res1 = solution.FindWords(WS2board, WS2words);
+List<string> WS2res2 =solution.FindWordsTHS(WS2board, WS2words);
+List<string> WS2res3 =solution.FindWordsT(WS2board, WS2words);
+// Output: ["cat","back","backend"]
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 11 - Graphs  ////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+char[][] grid = new char[][] {
+    new char[] { '0', '1', '1', '1', '0' },
+    new char[] { '0', '1', '0', '1', '0' },
+    new char[] { '1', '1', '0', '0', '0' },
+    new char[] { '0', '0', '0', '0', '0' }
+};
+int numIslandsResult1 = solution.NumIslandsDFS(grid);
+int numIslandsResult2 = solution.NumIslandsBFS(grid);
+int numIslandsResult3 = solution.NumIslandsDSU(grid);
+
+int[][] grid2 = new int[][] {
+    new int[] { 0, 1, 1, 0, 1 },
+    new int[] { 1, 0, 1, 0, 1 },
+    new int[] { 0, 1, 1, 0, 1 },
+    new int[] { 0, 1, 0, 0, 1 }
+};
+int maxAreaIslandsResult1 = solution.MaxAreaOfIslandDFS(grid2);
+int maxAreaIslandsResult2 = solution.MaxAreaOfIslandBFS(grid2);
+int maxAreaIslandsResult3 = solution.MaxAreaOfIslandDSU(grid2);
+
+// create the nodes
+MAINode MAInode1 = new MAINode(1);
+MAINode MAInode2 = new MAINode(2);
+MAINode MAInode3 = new MAINode(3);
+// Establish connections
+MAInode1.neighbors.Add(MAInode2);
+MAInode2.neighbors.Add(MAInode1);
+MAInode2.neighbors.Add(MAInode3);
+MAInode3.neighbors.Add(MAInode2);
+// call the functions
+MAINode clonenodes1 = solution.CloneGraphDFS(MAInode1);
+MAINode clonenodes2 = solution.CloneGraphBFS(MAInode1);
+
+int[][] grid3 = new int[][] {
+    new int[] { 2147483647,         -1,          0, 2147483647 },
+    new int[] { 2147483647, 2147483647, 2147483647,         -1 },
+    new int[] { 2147483647,         -1, 2147483647,         -1 },
+    new int[] { 0,                  -1, 2147483647, 2147483647 }
+};
+// grid is modified in place - no return value
+solution.islandsAndTreasureBruteForce(grid3);
+solution.islandsAndTreasureBFS(grid3);
+solution.islandsAndTreasureMultiSourceBFS(grid3);
