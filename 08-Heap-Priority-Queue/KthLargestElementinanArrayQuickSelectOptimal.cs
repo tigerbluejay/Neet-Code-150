@@ -71,7 +71,11 @@ public partial class Solution {
         }
     }
     
+<<<<<<< HEAD
     public int FindKthLargestQSO(int[] nums, int k) {
+=======
+    public int FindKthLargest(int[] nums, int k) {
+>>>>>>> 44ea6e05b4c0771726bcb8bf8b3603d3905fdffa
         return QuickSelect(nums, k - 1);
     }
 }
