@@ -877,3 +877,8 @@ int[][] grid3 = new int[][] {
 solution.islandsAndTreasureBruteForce(grid3);
 solution.islandsAndTreasureBFS(grid3);
 solution.islandsAndTreasureMultiSourceBFS(grid3);
+
+int[][] rottingFruitGrid = [[1,1,0],[0,1,1],[0,1,2]];
+int timeBeforeAllRot = solution.OrangesRotting(rottingFruitGrid);
+int timeBeforeAllRot2 = solution.OrangesRottingNoQueue(rottingFruitGrid);
+
