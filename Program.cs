@@ -882,3 +882,11 @@ int[][] rottingFruitGrid = [[1,1,0],[0,1,1],[0,1,2]];
 int timeBeforeAllRot = solution.OrangesRotting(rottingFruitGrid);
 int timeBeforeAllRot2 = solution.OrangesRottingNoQueue(rottingFruitGrid);
 
+int[][] waterGrid = [[9,9,3],[8,9,4],[7,6,5]];
+// [9, 9, 3]
+// [8, 9, 4]
+// [7, 6, 5]
+List<List<int>> waterflowGridRes1 = solution.PacificAtlanticBFBacktracking(waterGrid);
+List<List<int>> waterflowGridRes2 = solution.PacificAtlantic(waterGrid);
+List<List<int>> waterflowGridRes3 = solution.PacificAtlanticBFS(waterGrid);
+

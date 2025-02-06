@@ -1,3 +1,66 @@
+public partial class Solution {
+    private int[][] PAWFDFSdirections = new int[][] { 
+        new int[] { 1, 0 }, new int[] { -1, 0 }, 
+        new int[] { 0, 1 }, new int[] { 0, -1 } 
+    };
+    public List<List<int>> PacificAtlantic(int[][] heights) {
+        int ROWS = heights.Length, COLS = heights[0].Length;
+        bool[,] pac = new bool[ROWS, COLS]; //  A boolean matrix to track which cells can flow into the Pacific Ocean.
+        bool[,] atl = new bool[ROWS, COLS]; //  A boolean matrix to track which cells can flow into the Atlantic Ocean.
+
+        // Runs DFS from the first row (Pacific Ocean) downward.
+        // Runs DFS from the last row (Atlantic Ocean) upward.
+        for (int c = 0; c < COLS; c++) {
+            PAWFDFSDfs(0, c, pac, heights);
+            PAWFDFSDfs(ROWS - 1, c, atl, heights);
+        }
+
+        // Runs DFS from the first column (Pacific Ocean) rightward.
+        // Runs DFS from the last column (Atlantic Ocean) leftward.
+        for (int r = 0; r < ROWS; r++) {
+            PAWFDFSDfs(r, 0, pac, heights);
+            PAWFDFSDfs(r, COLS - 1, atl, heights);
+        }
+
+        // If a cell is marked true in both pac and atl, it can reach both oceans.
+        // Those cells are added to the result list.
+        List<List<int>> res = new List<List<int>>();
+        for (int r = 0; r < ROWS; r++) {
+            for (int c = 0; c < COLS; c++) {
+                if (pac[r, c] && atl[r, c]) {
+                    res.Add(new List<int> { r, c });
+                }
+            }
+        }
+        return res;
+    }
+
+/*
+The DFS function (PAWFDFSDfs) operates on each individual cell and explores in all four directions 
+(up, down, left, right) recursively.
+
+When PAWFDFSDfs(r, c, ocean, heights) is called:
+  It marks the current cell as reachable (ocean[r, c] = true).
+  It then iterates over the four possible directions (stored in PAWFDFSdirections).
+  For each direction (nr, nc), it checks if the next cell:
+    Is within bounds.
+    Has not been visited (ocean[nr, nc] == false).
+    Has a height greater than or equal to the current cell (to allow water to "flow" uphill).
+    If the conditions are met, recursively calls DFS on the next cell.
+*/
+      private void PAWFDFSDfs(int r, int c, bool[,] ocean, int[][] heights) {
+        ocean[r, c] = true;
+        foreach (var dir in PAWFDFSdirections) {
+            int nr = r + dir[0], nc = c + dir[1];
+            if (nr >= 0 && nr < heights.Length && nc >= 0 && 
+                nc < heights[0].Length && !ocean[nr, nc] && 
+                heights[nr][nc] >= heights[r][c]) {
+                PAWFDFSDfs(nr, nc, ocean, heights);
+            }
+        }
+    }
+}
+
 /*
 Pacific Atlantic Water Flow
 

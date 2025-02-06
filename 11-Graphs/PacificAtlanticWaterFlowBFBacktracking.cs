@@ -5,7 +5,7 @@ public partial class Solution {
         new int[] {1, 0}, new int[] {-1, 0}, new int[] {0, 1}, new int[] {0, -1}
     };
 
-    public List<List<int>> PacificAtlantic(int[][] heights) {
+    public List<List<int>> PacificAtlanticBFBacktracking(int[][] heights) {
         PAWFROWS = heights.Length;
         PAWFCOLS = heights[0].Length;
         List<List<int>> res = new List<List<int>>();
