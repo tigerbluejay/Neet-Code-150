@@ -890,3 +890,20 @@ List<List<int>> waterflowGridRes1 = solution.PacificAtlanticBFBacktracking(water
 List<List<int>> waterflowGridRes2 = solution.PacificAtlantic(waterGrid);
 List<List<int>> waterflowGridRes3 = solution.PacificAtlanticBFS(waterGrid);
 
+char[][] surroundedRegionsBoard = [['X','X','X','X'],['X','O','O','X'],
+                                   ['X','O','O','X'],['X','X','X','O']];
+// Input: board = [
+//  ["X","X","X","X"],
+//  ["X","O","O","X"],
+//  ["X","O","O","X"],
+//  ["X","X","X","O"]
+// ]
+solution.SRDFSSolve(surroundedRegionsBoard);
+solution.SRBFSSolve(surroundedRegionsBoard);
+solution.SRDSUSolve(surroundedRegionsBoard);
+
+int numberofCourses = 4;
+int[][] prerequisiteCourseList = [[1,0], [2,1], [3,2]];
+// 0 <- 1 <- 2 <- 3
+bool CanSequenceBeCompleted1 = solution.CSDFSCanFinish(numberofCourses, prerequisiteCourseList);
+bool CanSequenceBeCompleted2 = solution.CSKACanFinish(numberofCourses, prerequisiteCourseList);
