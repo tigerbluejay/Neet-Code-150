@@ -907,3 +907,11 @@ int[][] prerequisiteCourseList = [[1,0], [2,1], [3,2]];
 // 0 <- 1 <- 2 <- 3
 bool CanSequenceBeCompleted1 = solution.CSDFSCanFinish(numberofCourses, prerequisiteCourseList);
 bool CanSequenceBeCompleted2 = solution.CSKACanFinish(numberofCourses, prerequisiteCourseList);
+
+int numberofCourses2 = 4;
+int[][] prerequisiteCourseList2 = [[1,0], [2,1], [3,2]];
+// 0 <- 1 <- 2 <- 3
+int[] courseList1 = solution.CSIICDFindOrder(numberofCourses2, prerequisiteCourseList2);
+int[] courseList2 = solution.CSIIKAFindOrder(numberofCourses2, prerequisiteCourseList2);
+int[] courseList3 = solution.CSIITSFindOrder(numberofCourses2, prerequisiteCourseList2);
+
