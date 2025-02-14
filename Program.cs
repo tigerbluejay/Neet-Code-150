@@ -915,3 +915,19 @@ int[] courseList1 = solution.CSIICDFindOrder(numberofCourses2, prerequisiteCours
 int[] courseList2 = solution.CSIIKAFindOrder(numberofCourses2, prerequisiteCourseList2);
 int[] courseList3 = solution.CSIITSFindOrder(numberofCourses2, prerequisiteCourseList2);
 
+
+int numberofNodesinGraph = 5;
+int[][] edgesinGraph = [[0,1], [0,2], [0,3], [1,4]];
+// Input:
+// n = 5
+// edges = [[0, 1], [0, 2], [0, 3], [1, 4]]
+// tree would be like:
+//          0
+//      1   2   3
+//    4
+// note there are no loops (for example 4 connecting to both 1 AND 0)
+// and there are no disconnected nodes
+// this makes a graph a valid tree
+bool isGraphValidTree1 = solution.GVTDFSValidTree(numberofNodesinGraph, edgesinGraph); // true
+bool isGraphValidTree2 = solution.GVTBFSValidTree(numberofNodesinGraph, edgesinGraph); // true
+bool isGraphValidTree3 = solution.GVTDSUValidTree(numberofNodesinGraph, edgesinGraph); // true
