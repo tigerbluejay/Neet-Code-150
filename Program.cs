@@ -931,3 +931,13 @@ int[][] edgesinGraph = [[0,1], [0,2], [0,3], [1,4]];
 bool isGraphValidTree1 = solution.GVTDFSValidTree(numberofNodesinGraph, edgesinGraph); // true
 bool isGraphValidTree2 = solution.GVTBFSValidTree(numberofNodesinGraph, edgesinGraph); // true
 bool isGraphValidTree3 = solution.GVTDSUValidTree(numberofNodesinGraph, edgesinGraph); // true
+
+// Input:
+// n=6
+// edges=[[0,1], [1,2], [2,3], [4,5]]
+// Output: 2
+int numberofNodesinGraph2 = 5;
+int[][] edgesinGraph2 = [[0,1], [0,2], [0,3], [1,4]];
+int numberofConnectedComponents1 = solution.NCCDFSCountComponents(numberofNodesinGraph2, edgesinGraph2);
+int numberofConnectedComponents2 = solution.NCCBFSCountComponents(numberofNodesinGraph2, edgesinGraph2);
+int numberofConnectedComponents3 = solution.NCCDSUCountComponents(numberofNodesinGraph2, edgesinGraph2);
