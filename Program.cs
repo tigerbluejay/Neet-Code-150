@@ -941,3 +941,12 @@ int[][] edgesinGraph2 = [[0,1], [0,2], [0,3], [1,4]];
 int numberofConnectedComponents1 = solution.NCCDFSCountComponents(numberofNodesinGraph2, edgesinGraph2);
 int numberofConnectedComponents2 = solution.NCCBFSCountComponents(numberofNodesinGraph2, edgesinGraph2);
 int numberofConnectedComponents3 = solution.NCCDSUCountComponents(numberofNodesinGraph2, edgesinGraph2);
+
+// Input:
+// edges = [[1,2],[1,3],[3,4],[2,4]]
+// Output: [2,4]
+int[][] edgelistforRC = [[1,2],[1,3],[3,4],[2,4]];
+int[] redundantConnectionsRes1 = solution.RCDFS1FindRedundantConnection(edgelistforRC);
+int[] redundantConnectionsRes2 = solution.RCDFS2FindRedundantConnection(edgelistforRC);
+int[] redundantConnectionsRes3 = solution.RCKAFindRedundantConnection(edgelistforRC);
+int[] redundantConnectionsRes4 = solution.RCDSUFindRedundantConnection(edgelistforRC);
