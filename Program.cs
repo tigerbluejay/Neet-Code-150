@@ -950,3 +950,17 @@ int[] redundantConnectionsRes1 = solution.RCDFS1FindRedundantConnection(edgelist
 int[] redundantConnectionsRes2 = solution.RCDFS2FindRedundantConnection(edgelistforRC);
 int[] redundantConnectionsRes3 = solution.RCKAFindRedundantConnection(edgelistforRC);
 int[] redundantConnectionsRes4 = solution.RCDSUFindRedundantConnection(edgelistforRC);
+
+// Input: beginWord = "cat", endWord = "sag", 
+// wordList = ["bat","bag","sag","dag","dot"]
+// Output: 4
+string beginWordWL = "cat"; string endWordWL = "sag";
+List<string> WLwordList = new List<string>();
+WLwordList.Add("bat"); WLwordList.Add("bag");
+WLwordList.Add("sag"); WLwordList.Add("dag");
+WLwordList.Add("dot");
+int WLshortestPath1 = solution.BFSILadderLength(beginWordWL, endWordWL, WLwordList);
+int WLshortestPath2 = solution.BFSIILadderLength(beginWordWL, endWordWL, WLwordList);
+int WLshortestPath3 = solution.BFSIIILadderLength(beginWordWL, endWordWL, WLwordList);
+int WLshortestPath4 = solution.BFSMMLadderLength(beginWordWL, endWordWL, WLwordList);
+
