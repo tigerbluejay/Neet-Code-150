@@ -992,3 +992,5 @@ int NDTsourceNode = 1;
 int NDTshortestPath1 = solution.NDTDFSNetworkDelayTime(sourceDestTime, NDTnumberofNodes, NDTsourceNode);
 int NDTshortestPath2 = solution.NDTFWNetworkDelayTime(sourceDestTime, NDTnumberofNodes, NDTsourceNode);
 int NDTshortestPath3 = solution.NDTBFNetworkDelayTime(sourceDestTime, NDTnumberofNodes, NDTsourceNode);
+int NDTshortestPath4 = solution.NDTSPNetworkDelayTime(sourceDestTime, NDTnumberofNodes, NDTsourceNode);
+int NDTshortestPath5 = solution.NDTDNetworkDelayTime(sourceDestTime, NDTnumberofNodes, NDTsourceNode);
