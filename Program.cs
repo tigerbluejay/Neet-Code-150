@@ -994,3 +994,16 @@ int NDTshortestPath2 = solution.NDTFWNetworkDelayTime(sourceDestTime, NDTnumbero
 int NDTshortestPath3 = solution.NDTBFNetworkDelayTime(sourceDestTime, NDTnumberofNodes, NDTsourceNode);
 int NDTshortestPath4 = solution.NDTSPNetworkDelayTime(sourceDestTime, NDTnumberofNodes, NDTsourceNode);
 int NDTshortestPath5 = solution.NDTDNetworkDelayTime(sourceDestTime, NDTnumberofNodes, NDTsourceNode);
+
+
+List<List<string>> listofpaths = new List<List<string>>()
+{
+    new List<string> { "HOU", "JFK" },
+    new List<string> { "SEA", "JFK" },
+    new List<string> { "JFK", "SEA" },
+    new List<string> { "JFK", "HOU" }
+};
+
+List<string> RFPitenerary1 = solution.RFPDFSFindItinerary(listofpaths);
+List<string> RFPitenerary2 = solution.RFPHRFindItinerary(listofpaths);
+List<string> RFPitenerary3 = solution.RFPHIFindItinerary(listofpaths);
