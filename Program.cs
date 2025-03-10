@@ -1007,3 +1007,13 @@ List<List<string>> listofpaths = new List<List<string>>()
 List<string> RFPitenerary1 = solution.RFPDFSFindItinerary(listofpaths);
 List<string> RFPitenerary2 = solution.RFPHRFindItinerary(listofpaths);
 List<string> RFPitenerary3 = solution.RFPHIFindItinerary(listofpaths);
+
+
+// Input: points = [[0,0],[2,2],[3,3],[2,4],[4,2]]
+int[][] minCostPoints = [[0,0], [2,2], [3,3], [2,4], [4,2]];
+
+int minCostRes1 = solution.MCCPKMinCostConnectPoints(minCostPoints);
+int minCostRes2 = solution.MCCPPIMinCostConnectPoints(minCostPoints);
+int minCostRes3 = solution.MCCPPIIMinCostConnectPoints(minCostPoints);
+
+

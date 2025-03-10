@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C Desktop\\23-25 DS&A\\Neet Code 150\\Neet Code 150.csproj": {}
+    "C:\\Users\\josem\\Desktop\\Repositories\\Neet-Code-150\\Neet Code 150.csproj": {}
   },
   "projects": {
-    "D:\\C Desktop\\23-25 DS&A\\Neet Code 150\\Neet Code 150.csproj": {
+    "C:\\Users\\josem\\Desktop\\Repositories\\Neet-Code-150\\Neet Code 150.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C Desktop\\23-25 DS&A\\Neet Code 150\\Neet Code 150.csproj",
+        "projectUniqueName": "C:\\Users\\josem\\Desktop\\Repositories\\Neet-Code-150\\Neet Code 150.csproj",
         "projectName": "Neet Code 150",
-        "projectPath": "D:\\C Desktop\\23-25 DS&A\\Neet Code 150\\Neet Code 150.csproj",
+        "projectPath": "C:\\Users\\josem\\Desktop\\Repositories\\Neet-Code-150\\Neet Code 150.csproj",
         "packagesPath": "C:\\Users\\josem\\.nuget\\packages\\",
-        "outputPath": "D:\\C Desktop\\23-25 DS&A\\Neet Code 150\\obj\\",
+        "outputPath": "C:\\Users\\josem\\Desktop\\Repositories\\Neet-Code-150\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
