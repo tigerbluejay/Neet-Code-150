@@ -1016,4 +1016,14 @@ int minCostRes1 = solution.MCCPKMinCostConnectPoints(minCostPoints);
 int minCostRes2 = solution.MCCPPIMinCostConnectPoints(minCostPoints);
 int minCostRes3 = solution.MCCPPIIMinCostConnectPoints(minCostPoints);
 
+int[][] SRWgrid = {
+    new int[] {0, 2, 4},
+    new int[] {1, 3, 5},
+    new int[] {2, 6, 7}
+};
 
+int RWminWaterLevel2 = solution.BFSwimInWater(SRWgrid);
+int RWminWaterLevel1 = solution.DFSSwimInWater(SRWgrid);
+int RWminWaterLevel3 = solution.BSDFSSwimInWater(SRWgrid);
+int RWminWaterLevel4 = solution.DASwimInWater(SRWgrid);
+int RWminWaterLevel5 = solution.KASwimInWater(SRWgrid);
