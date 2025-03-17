@@ -1027,3 +1027,9 @@ int RWminWaterLevel1 = solution.DFSSwimInWater(SRWgrid);
 int RWminWaterLevel3 = solution.BSDFSSwimInWater(SRWgrid);
 int RWminWaterLevel4 = solution.DASwimInWater(SRWgrid);
 int RWminWaterLevel5 = solution.KASwimInWater(SRWgrid);
+
+
+string[] alienDictionary = ["hrn", "hrf", "er", "enn", "rfnn"];
+
+string properOrdering = solution.ADDFSforeignDictionary(alienDictionary);
+string properOrdering2 = solution.ADTSforeignDictionary(alienDictionary);
