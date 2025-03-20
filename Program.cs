@@ -1033,3 +1033,17 @@ string[] alienDictionary = ["hrn", "hrf", "er", "enn", "rfnn"];
 
 string properOrdering = solution.ADDFSforeignDictionary(alienDictionary);
 string properOrdering2 = solution.ADTSforeignDictionary(alienDictionary);
+
+// Input: n = 4, flights = [[0,1,200],[1,2,100],[1,3,300],[2,3,100]], src = 0, dst = 3, k = 1
+// Output: 500
+
+int cheapestFlightsNodes = 4;
+int[][] flights = [[0,1,200],[1,2,100],[1,3,300],[2,3,100]];
+int srcNode = 0;
+int dstNode = 3;
+int kStops = 1;
+
+int cheapestFlightKStops = solution.BFFindCheapestPrice(cheapestFlightsNodes, flights, srcNode, dstNode, kStops);
+int cheapestFlightKStops2 = solution.DAFindCheapestPrice(cheapestFlightsNodes, flights, srcNode, dstNode, kStops);
+int cheapestFlightKStops3 = solution.SPFindCheapestPrice(cheapestFlightsNodes, flights, srcNode, dstNode, kStops);
+
