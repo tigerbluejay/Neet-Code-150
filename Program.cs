@@ -965,7 +965,7 @@ int WLshortestPath3 = solution.BFSIIILadderLength(beginWordWL, endWordWL, WLword
 int WLshortestPath4 = solution.BFSMMLadderLength(beginWordWL, endWordWL, WLwordList);
 
 //////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////// 11 - Advanced Graphs  //////////////////////////////////////////////
+///////////////////////// 12 - Advanced Graphs  //////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 // Input:
@@ -1047,3 +1047,15 @@ int cheapestFlightKStops = solution.BFFindCheapestPrice(cheapestFlightsNodes, fl
 int cheapestFlightKStops2 = solution.DAFindCheapestPrice(cheapestFlightsNodes, flights, srcNode, dstNode, kStops);
 int cheapestFlightKStops3 = solution.SPFindCheapestPrice(cheapestFlightsNodes, flights, srcNode, dstNode, kStops);
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////// 13 - 1-D Dynamic Programming  //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+int stepsToClimb = 5;
+
+int possibleWaystoClimb1 = solution.RClimbStairs(stepsToClimb);
+int possibleWaystoClimb2 = solution.DPTDClimbStairs(stepsToClimb);
+int possibleWaystoClimb3 = solution.DPBUClimbStairs(stepsToClimb);
+int possibleWaystoClimb4 = solution.DPSOClimbStairs(stepsToClimb);
+int possibleWaystoClimb5 = solution.MEClimbStairs(stepsToClimb);
+int possibleWaystoClimb6 = solution.MClimbStairs(stepsToClimb);
