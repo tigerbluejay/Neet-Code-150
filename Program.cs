@@ -1059,3 +1059,10 @@ int possibleWaystoClimb3 = solution.DPBUClimbStairs(stepsToClimb);
 int possibleWaystoClimb4 = solution.DPSOClimbStairs(stepsToClimb);
 int possibleWaystoClimb5 = solution.MEClimbStairs(stepsToClimb);
 int possibleWaystoClimb6 = solution.MClimbStairs(stepsToClimb);
+
+int[] costofTakingEachStep = [1,2,1,2,1,1,1];
+
+int minimumTotalCost1 = solution.RMinCostClimbingStairs(costofTakingEachStep);
+int minimumTotalCost2 = solution.DPTDMinCostClimbingStairs(costofTakingEachStep);
+int minimumTotalCost3 = solution.DPBUMinCostClimbingStairs(costofTakingEachStep);
+int minimumTotalCost4 = solution.DPSOMinCostClimbingStairs(costofTakingEachStep);
