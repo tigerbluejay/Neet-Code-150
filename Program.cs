@@ -1066,3 +1066,11 @@ int minimumTotalCost1 = solution.RMinCostClimbingStairs(costofTakingEachStep);
 int minimumTotalCost2 = solution.DPTDMinCostClimbingStairs(costofTakingEachStep);
 int minimumTotalCost3 = solution.DPBUMinCostClimbingStairs(costofTakingEachStep);
 int minimumTotalCost4 = solution.DPSOMinCostClimbingStairs(costofTakingEachStep);
+
+int[] housestoRob = [2, 9, 8, 3, 6];
+
+int maxLoot1 = solution.RRob(housestoRob);
+int maxLoot2 = solution.DPTDRob(housestoRob);
+int maxLoot3 = solution.DPBURob(housestoRob);
+int maxLoot4 = solution.DPSORob(housestoRob);
+
