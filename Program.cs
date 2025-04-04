@@ -1074,3 +1074,9 @@ int maxLoot2 = solution.DPTDRob(housestoRob);
 int maxLoot3 = solution.DPBURob(housestoRob);
 int maxLoot4 = solution.DPSORob(housestoRob);
 
+int[] circularHousestoRob = [2, 9, 8, 3, 6];
+
+int maxLoot5 = solution.HRIIRRob(circularHousestoRob);
+int maxLoot7 = solution.HRIIDPTDRob(circularHousestoRob);
+int maxLoot8 = solution.HRIIDPBURob(circularHousestoRob);
+int maxLoot9 = solution.HRIIDPSORob(circularHousestoRob);
