@@ -1080,3 +1080,10 @@ int maxLoot5 = solution.HRIIRRob(circularHousestoRob);
 int maxLoot7 = solution.HRIIDPTDRob(circularHousestoRob);
 int maxLoot8 = solution.HRIIDPBURob(circularHousestoRob);
 int maxLoot9 = solution.HRIIDPSORob(circularHousestoRob);
+
+string stringtosearch = "ababd";
+
+string longestPaliSubstring1 = solution.BFLongestPalindrome(stringtosearch);
+string longestPaliSubstring2 = solution.DPLongestPalindrome(stringtosearch);
+string longestPaliSubstring3 = solution.TPLongestPalindrome(stringtosearch);
+string longestPaliSubstring4 = solution.MLongestPalindrome(stringtosearch);
