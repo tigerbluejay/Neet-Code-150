@@ -1087,3 +1087,12 @@ string longestPaliSubstring1 = solution.BFLongestPalindrome(stringtosearch);
 string longestPaliSubstring2 = solution.DPLongestPalindrome(stringtosearch);
 string longestPaliSubstring3 = solution.TPLongestPalindrome(stringtosearch);
 string longestPaliSubstring4 = solution.MLongestPalindrome(stringtosearch);
+
+
+string stringtoSearch2 = "aaa";
+
+int countPaliSubstring1 = solution.BFCountSubstrings(stringtoSearch2);
+int countPaliSubstring2 = solution.DPCountSubstrings(stringtoSearch2);
+int countPaliSubstring3 = solution.TPCountSubstrings(stringtoSearch2);
+int countPaliSubstring4 = solution.TPOCountSubstrings(stringtoSearch2);
+int countPaliSubstring5 = solution.MCountSubstrings(stringtoSearch2);
