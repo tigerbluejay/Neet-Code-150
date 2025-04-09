@@ -1096,3 +1096,10 @@ int countPaliSubstring2 = solution.DPCountSubstrings(stringtoSearch2);
 int countPaliSubstring3 = solution.TPCountSubstrings(stringtoSearch2);
 int countPaliSubstring4 = solution.TPOCountSubstrings(stringtoSearch2);
 int countPaliSubstring5 = solution.MCountSubstrings(stringtoSearch2);
+
+string stringtoDecode = "1243";
+
+int countWaysofDecoding1 = solution.RNumDecodings(stringtoDecode);
+int countWaysofDecoding2 = solution.TDNumDecodings(stringtoDecode);
+int countWaysofDecoding3 = solution.BUNumDecodings(stringtoDecode);
+int countWaysofDecoding4 = solution.SONumDecodings(stringtoDecode);
