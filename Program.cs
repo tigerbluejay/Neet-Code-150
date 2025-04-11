@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 
 Console.WriteLine("Hello, World!");
 
@@ -1103,3 +1104,11 @@ int countWaysofDecoding1 = solution.RNumDecodings(stringtoDecode);
 int countWaysofDecoding2 = solution.TDNumDecodings(stringtoDecode);
 int countWaysofDecoding3 = solution.BUNumDecodings(stringtoDecode);
 int countWaysofDecoding4 = solution.SONumDecodings(stringtoDecode);
+
+int[] coins = [1,3,4,5]; int targetAmount = 7;
+
+int minCoinsUsed1 = solution.RCoinChange(coins, targetAmount);
+int minCoinsUsed2 = solution.DPTDCoinChange(coins, targetAmount);
+int minCoinsUsed3 = solution.DPBUCoinChange(coins, targetAmount);
+int minCoinsUsed4 = solution.BFSCoinChange(coins, targetAmount);
+
