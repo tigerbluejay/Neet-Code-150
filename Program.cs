@@ -1112,3 +1112,10 @@ int minCoinsUsed2 = solution.DPTDCoinChange(coins, targetAmount);
 int minCoinsUsed3 = solution.DPBUCoinChange(coins, targetAmount);
 int minCoinsUsed4 = solution.BFSCoinChange(coins, targetAmount);
 
+int[] arraytobeMultiplied = [1,2,-3,4];
+
+int maxsubarrayproduct1 = solution.MPSMaxProduct(arraytobeMultiplied);
+int maxsubarrayproduct2 = solution.MPSSWMaxProduct(arraytobeMultiplied);
+int maxsubarrayproduct3 = solution.MPSKAMaxProduct(arraytobeMultiplied);
+int maxsubarrayproduct4 = solution.MPSPSMaxProduct(arraytobeMultiplied);
+
