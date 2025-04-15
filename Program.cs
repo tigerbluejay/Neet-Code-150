@@ -1119,3 +1119,10 @@ int maxsubarrayproduct2 = solution.MPSSWMaxProduct(arraytobeMultiplied);
 int maxsubarrayproduct3 = solution.MPSKAMaxProduct(arraytobeMultiplied);
 int maxsubarrayproduct4 = solution.MPSPSMaxProduct(arraytobeMultiplied);
 
+string fullWord = "applepenapple";
+List<string> wordDict = ["apple","pen","ape"];
+
+bool canWordBeSegmented1 = solution.RWordBreak(fullWord, wordDict);
+bool canWordBeSegmented2 = solution.RHSWordBreak(fullWord, wordDict);
+bool canWordBeSegmented3 = solution.DPTDWordBreak(fullWord, wordDict);
+
