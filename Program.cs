@@ -1125,4 +1125,25 @@ List<string> wordDict = ["apple","pen","ape"];
 bool canWordBeSegmented1 = solution.RWordBreak(fullWord, wordDict);
 bool canWordBeSegmented2 = solution.RHSWordBreak(fullWord, wordDict);
 bool canWordBeSegmented3 = solution.DPTDWordBreak(fullWord, wordDict);
+bool canWordBeSegmented4 = solution.DPBUWordBreak(fullWord, wordDict);
+bool canWordBeSegmented5 = solution.DPHSWordBreak(fullWord, wordDict);
+bool canWordBeSegmented6 = solution.DPTWordBreak(fullWord, wordDict);
+
+int[] LISnums = [9, 1, 4, 2, 3, 3, 7];
+
+int longestIncreasingSubsequence1 = solution.RLengthOfLIS(LISnums);
+int longestIncreasingSubsequence2 = solution.DPTDILengthOfLIS(LISnums);
+int longestIncreasingSubsequence3 = solution.DPTDIILengthOfLIS(LISnums);
+int longestIncreasingSubsequence4 = solution.DPBUILengthOfLIS(LISnums);
+int longestIncreasingSubsequence5 = solution.DPBUIILengthOfLIS(LISnums);
+int longestIncreasingSubsequence6 = solution.DPBSLengthOfLIS(LISnums);
+int longestIncreasingSubsequence7 = solution.STLengthOfLIS(LISnums);
+
+
+int[] PESSnums = [1, 2, 3, 4];
+
+bool partitionEqualSubsetSum1 = solution.RCanPartition(PESSnums);
+bool partitionEqualSubsetSum2 = solution.DPTDCanPartition(PESSnums);
+bool partitionEqualSubsetSum3 = solution.DPBUCanPartition(PESSnums);
+bool partitionEqualSubsetSum4 = solution.DPSOCanPartition(PESSnums);
 
