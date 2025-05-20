@@ -1146,4 +1146,6 @@ bool partitionEqualSubsetSum1 = solution.RCanPartition(PESSnums);
 bool partitionEqualSubsetSum2 = solution.DPTDCanPartition(PESSnums);
 bool partitionEqualSubsetSum3 = solution.DPBUCanPartition(PESSnums);
 bool partitionEqualSubsetSum4 = solution.DPSOCanPartition(PESSnums);
+bool partitionEqualSubsetSum5 = solution.DPHSCanPartition(PESSnums);
+bool partitionEqualSubsetSum6 = solution.DPOCanPartition(PESSnums);
 
