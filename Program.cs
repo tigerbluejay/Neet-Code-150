@@ -1149,3 +1149,10 @@ bool partitionEqualSubsetSum4 = solution.DPSOCanPartition(PESSnums);
 bool partitionEqualSubsetSum5 = solution.DPHSCanPartition(PESSnums);
 bool partitionEqualSubsetSum6 = solution.DPOCanPartition(PESSnums);
 
+
+int uniquePathRows = 3; int uniquePathColumns = 6;
+
+int uniquePaths1 = solution.RUniquePaths(uniquePathRows, uniquePathColumns);
+int uniquePaths2 = solution.DPTDUniquePaths(uniquePathRows, uniquePathColumns);
+int uniquePaths3 = solution.DPBUUniquePaths(uniquePathRows, uniquePathColumns);
+
