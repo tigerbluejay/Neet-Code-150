@@ -1149,10 +1149,15 @@ bool partitionEqualSubsetSum4 = solution.DPSOCanPartition(PESSnums);
 bool partitionEqualSubsetSum5 = solution.DPHSCanPartition(PESSnums);
 bool partitionEqualSubsetSum6 = solution.DPOCanPartition(PESSnums);
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////// 14 - 2-D Dynamic Programming  //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 int uniquePathRows = 3; int uniquePathColumns = 6;
 
 int uniquePaths1 = solution.RUniquePaths(uniquePathRows, uniquePathColumns);
 int uniquePaths2 = solution.DPTDUniquePaths(uniquePathRows, uniquePathColumns);
 int uniquePaths3 = solution.DPBUUniquePaths(uniquePathRows, uniquePathColumns);
-
+int uniquePaths4 = solution.DPSOUniquePaths(uniquePathRows, uniquePathColumns);
+int uniquePaths5 = solution.DPOUniquePaths(uniquePathRows, uniquePathColumns);
+int uniquePaths6 = solution.MathUniquePaths(uniquePathRows, uniquePathColumns);
