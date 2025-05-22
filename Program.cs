@@ -1161,3 +1161,7 @@ int uniquePaths3 = solution.DPBUUniquePaths(uniquePathRows, uniquePathColumns);
 int uniquePaths4 = solution.DPSOUniquePaths(uniquePathRows, uniquePathColumns);
 int uniquePaths5 = solution.DPOUniquePaths(uniquePathRows, uniquePathColumns);
 int uniquePaths6 = solution.MathUniquePaths(uniquePathRows, uniquePathColumns);
+
+string text1LCS = "cat"; string text2LCS = "crabt";
+
+int longestCommonSubsequence1 = solution.RLongestCommonSubsequence(text1LCS, text2LCS);
